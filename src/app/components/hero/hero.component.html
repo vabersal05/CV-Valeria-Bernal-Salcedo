@@ -1,0 +1,74 @@
+<section id="top" class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">Ingeniería en Sistemas Computacionales · 7° semestre</p>
+      <h1 class="hero__name">Valeria Bernal<br>Salcedo</h1>
+      <p class="hero__role">Estudiante</p>
+      <p class="hero__tagline">
+        Construyo productos de extremo a extremo con Angular, React y Node.js, y diseño
+        canalizaciones de datos con Apache Kafka y Spark. Busco una práctica profesional
+        donde aportar valor desde el primer commit.
+      </p>
+
+      <ul class="hero__contact">
+        @for (c of contact; track c.label) {
+          <li>
+            @if (c.href) {
+              <a [href]="c.href" [target]="c.external ? '_blank' : null" [rel]="c.external ? 'noopener' : null" [attr.aria-label]="c.label">
+                <span class="hero__icon">
+                  @switch (c.icon) {
+                    @case ('mail') {
+                      <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5 12 13l8.5-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    }
+                    @case ('phone') {
+                      <svg viewBox="0 0 24 24" fill="none"><path d="M5 4.5h3.2l1.3 4.3-2 1.6a11.5 11.5 0 0 0 5.6 5.6l1.6-2 4.3 1.3V18a1.5 1.5 0 0 1-1.6 1.5C10.9 18.9 5.1 13.1 4.5 6.1A1.5 1.5 0 0 1 5 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                    }
+                    @case ('github') {
+                      <svg viewBox="0 0 24 24" fill="none"><path d="M9 8.5 5.5 12 9 15.5M15 8.5 18.5 12 15 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    }
+                    @case ('linkedin') {
+                      <svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="1.6" stroke="currentColor" stroke-width="1.5"/><path d="M7 10.5v8M12 18.5v-5c0-1.5 1-2.7 2.5-2.7s2.5 1.2 2.5 2.7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 10.8v1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    }
+                    @case ('pin') {
+                      <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-5.6-6.5-10.8a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10.2" r="2.1" stroke="currentColor" stroke-width="1.5"/></svg>
+                    }
+                  }
+                </span>
+                <span class="hero__contact-label">{{ c.label }}</span>
+              </a>
+            } @else {
+              <span class="hero__contact-static" [attr.aria-label]="c.label">
+                <span class="hero__icon">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-5.6-6.5-10.8a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10.2" r="2.1" stroke="currentColor" stroke-width="1.5"/></svg>
+                </span>
+                <span class="hero__contact-label">{{ c.label }}</span>
+              </span>
+            }
+          </li>
+        }
+      </ul>
+
+      <div class="hero__actions">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="cv-valeria-bernal-salcedo.pdf" download class="btn btn-ghost">
+          Descargar CV
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none"><path d="M12 4v11m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 18.5h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__photo">
+      <div class="hero__photo-decor" aria-hidden="true"></div>
+      <div class="hero__photo-frame">
+        @if (!imgError) {
+          <img src="profile1.jpg" alt="Foto de Valeria Bernal Salcedo" (error)="imgError = true" />
+        } @else {
+          <div class="hero__photo-placeholder">
+            <span class="hero__photo-monogram">VB</span>
+            <p>Agrega tu foto en<br><code>src/assets/profile.jpg</code></p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

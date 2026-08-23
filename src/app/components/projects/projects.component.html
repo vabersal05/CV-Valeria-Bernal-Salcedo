@@ -1,0 +1,41 @@
+<section id="proyectos" class="section projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Proyectos destacados</p>
+        <h2>Lo que he construido</h2>
+      </div>
+      <span class="section-index">03 / proyectos</span>
+    </div>
+
+    <div class="projects__grid">
+      @for (p of projects; track p.name) {
+        <article class="project-card">
+          <div class="project-card__top">
+            <h3>{{ p.name }}</h3>
+            <span class="project-card__period">{{ p.period }}</span>
+          </div>
+
+          <ul class="project-card__bullets">
+            @for (b of p.bullets; track b) {
+              <li>{{ b }}</li>
+            }
+          </ul>
+
+          <ul class="project-card__stack">
+            @for (t of p.stack; track t) {
+              <li class="tag">{{ t }}</li>
+            }
+          </ul>
+
+          @if (p.demo || p.repo) {
+            <div class="project-card__links">
+              @if (p.demo) { <a [href]="p.demo" target="_blank" rel="noopener">Demo en vivo →</a> }
+              @if (p.repo) { <a [href]="p.repo" target="_blank" rel="noopener">Repositorio →</a> }
+            </div>
+          }
+        </article>
+      }
+    </div>
+  </div>
+</section>

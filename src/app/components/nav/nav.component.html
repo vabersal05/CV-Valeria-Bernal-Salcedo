@@ -1,0 +1,17 @@
+<header class="nav" [class.nav--scrolled]="scrolled">
+  <div class="wrap nav__inner">
+    <a href="#top" class="nav__logo">Valeria Bernal Salcedo</a>
+
+    <nav class="nav__links" [class.nav__links--open]="open">
+      <a href="#perfil" (click)="close()">Perfil</a>
+      <a href="#habilidades" (click)="close()">Habilidades</a>
+      <a href="#proyectos" (click)="close()">Proyectos</a>
+      <a href="#trayectoria" (click)="close()">Trayectoria</a>
+      <a href="#contacto" class="nav__cta" (click)="close()">Contacto</a>
+    </nav>
+
+    <button class="nav__toggle" (click)="toggle()" aria-label="Abrir menú" [attr.aria-expanded]="open">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

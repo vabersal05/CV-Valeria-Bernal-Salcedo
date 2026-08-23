@@ -1,0 +1,31 @@
+<section id="perfil" class="section about">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Perfil</p>
+        <h2>Quién soy</h2>
+      </div>
+      <span class="section-index">01 / trayectoria</span>
+    </div>
+
+    <div class="about__grid">
+      <p class="about__text">
+        Estudiante de Ingeniería en Sistemas Computacionales cursando 7° semestre, en búsqueda de
+        prácticas profesionales en desarrollo de software. Tengo experiencia práctica en desarrollo
+        web con Angular, React, Node.js y MySQL, así como en procesamiento distribuido con
+        Apache Kafka y Apache Spark. He trabajado bajo metodologías SCRUM y Cascada, utilizando
+        Trello y Jira para la gestión de tableros ágiles. Busco integrarme a un equipo de TI donde
+        pueda aportar valor desde el primer día y seguir desarrollando mis habilidades técnicas.
+      </p>
+
+      <dl class="about__stats">
+        @for (s of stats; track s.label) {
+          <div class="stat">
+            <dt>{{ s.value }}</dt>
+            <dd>{{ s.label }}</dd>
+          </div>
+        }
+      </dl>
+    </div>
+  </div>
+</section>
