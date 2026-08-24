@@ -20,7 +20,7 @@ export class HeroComponent {
     { label: 'vabersal05@gmail.com', href: 'mailto:vabersal05@gmail.com', icon: 'mail' },
     { label: '+52 449 109 2451', href: 'tel:+524491092451', icon: 'phone' },
     { label: 'github.com/vabersal05', href: 'https://github.com/vabersal05', icon: 'github', external: true },
-    { label: 'linkedin.com/in/valeria-salcedo-657874430', href: 'https://www.linkedin.com/in/valeria-salcedo-657874430', icon: 'linkedin', external: true },
+    { label: 'linkedin.com/in/valeria-bernal-salcedo', href: 'https://www.linkedin.com/in/valeria-bernal-salcedo', icon: 'linkedin', external: true },
     { label: 'Aguascalientes, México', href: '', icon: 'pin' }
   ];
 
