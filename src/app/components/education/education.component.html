@@ -2,22 +2,22 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <p class="eyebrow">Trayectoria</p>
-        <h2>Educación y certificaciones</h2>
+        <p class="eyebrow">Track record </p>
+        <h2>Education and Certifications</h2>
       </div>
-      <span class="section-index">04 / formación</span>
+      <span class="section-index">04 / training</span>
     </div>
 
     <div class="education__grid">
       <div class="education__col">
-        <h3 class="col-title">Educación</h3>
+        <h3 class="col-title">Education</h3>
         <div class="edu-item">
           <p class="edu-item__degree">{{ education.degree }}</p>
           <p class="edu-item__school">{{ education.school }}</p>
           <p class="edu-item__period">{{ education.period }}</p>
         </div>
 
-        <h3 class="col-title col-title--spaced">Idiomas</h3>
+        <h3 class="col-title col-title--spaced">Languages</h3>
         @for (l of languages; track l.name) {
           <div class="edu-item">
             <p class="edu-item__degree">{{ l.name }} · {{ l.level }}</p>
@@ -27,7 +27,7 @@
       </div>
 
       <div class="education__col">
-        <h3 class="col-title">Certificaciones y formación complementaria</h3>
+        <h3 class="col-title">Certifications and Additional Training</h3>
         @for (c of certifications; track c.name) {
           <div class="cert-item">
             <p class="cert-item__name">{{ c.name }}</p>

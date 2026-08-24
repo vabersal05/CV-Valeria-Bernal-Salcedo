@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   stats = [
-    { value: '7°', label: 'semestre cursando' },
-    { value: '4', label: 'proyectos completos' },
-    { value: 'B2', label: 'inglés' }
+    { value: '7°', label: 'current semester' },
+    { value: '4', label: 'complete projects' },
+    { value: 'B2', label: 'english level' }
   ];
 }

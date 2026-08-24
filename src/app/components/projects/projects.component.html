@@ -2,10 +2,10 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <p class="eyebrow">Proyectos destacados</p>
-        <h2>Lo que he construido</h2>
+        <p class="eyebrow">Featured Projects</p>
+        <h2>What I've Built</h2>
       </div>
-      <span class="section-index">03 / proyectos</span>
+      <span class="section-index">03 / projects</span>
     </div>
 
     <div class="projects__grid">
@@ -30,8 +30,8 @@
 
           @if (p.demo || p.repo) {
             <div class="project-card__links">
-              @if (p.demo) { <a [href]="p.demo" target="_blank" rel="noopener">Demo en vivo →</a> }
-              @if (p.repo) { <a [href]="p.repo" target="_blank" rel="noopener">Repositorio →</a> }
+              @if (p.demo) { <a [href]="p.demo" target="_blank" rel="noopener">Live Demo →</a> }
+              @if (p.repo) { <a [href]="p.repo" target="_blank" rel="noopener">Repository →</a> }
             </div>
           }
         </article>

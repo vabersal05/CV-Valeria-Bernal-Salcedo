@@ -14,11 +14,11 @@ interface SkillGroup {
 })
 export class SkillsComponent {
   groups: SkillGroup[] = [
-    { title: 'Lenguajes', items: ['Java', 'JavaScript', 'TypeScript', 'C#', 'C++', 'SQL', 'HTML', 'CSS'] },
-    { title: 'Frameworks y librerías', items: ['Angular', 'React', 'Node.js', 'Express'] },
-    { title: 'Bases de datos', items: ['MySQL'] },
-    { title: 'Herramientas', items: ['Git', 'GitHub', 'Docker', 'Trello', 'Jira', 'VS Code', 'Visual Studio', 'Postman', 'XAMPP'] },
-    { title: 'Metodologías', items: ['SCRUM', 'Cascada'] },
-    { title: 'Otros conocimientos', items: ['Frontend', 'Backend','APIs REST', 'Diseño de BD', 'Diseño responsive', 'Documentación técnica', 'Cliente-Servidor'] }
+    { title: 'Languages', items: ['Java', 'JavaScript', 'TypeScript', 'C#', 'C++', 'SQL', 'HTML', 'CSS'] },
+    { title: 'Frameworks & Libraries', items: ['Angular', 'React', 'Node.js', 'Express'] },
+    { title: 'Databases', items: ['MySQL'] },
+    { title: 'Tools', items: ['Git', 'GitHub', 'Docker', 'Trello', 'Jira', 'VS Code', 'Visual Studio', 'Postman', 'XAMPP'] },
+    { title: 'Methodologies', items: ['SCRUM', 'Waterfall'] },
+    { title: 'Other Knowledge', items: ['Frontend', 'Backend','REST APIs', 'Database Design', 'Responsive Design', 'Technical Documentation', 'Client-Server Architecture'] }
   ];
 }

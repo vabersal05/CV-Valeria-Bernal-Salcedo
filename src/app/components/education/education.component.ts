@@ -9,25 +9,25 @@ import { Component } from '@angular/core';
 })
 export class EducationComponent {
   education = {
-    degree: 'Ingeniería en Sistemas Computacionales',
+    degree: 'Computer Systems Engineering',
     school: 'Universidad Autónoma de Aguascalientes',
-    period: '2023 — presente'
+    period: '2023 — present'
   };
 
   certifications = [
     {
       name: 'Mendix Rapid Developer Certification',
       issuer: '2026',
-      detail: 'Certificación oficial en desarrollo de aplicaciones Low-Code: modelado de datos, lógica de negocio e interfaces de usuario.'
+      detail: 'Official certification in Low-Code application development with Mendix. Covers enterprise application development, data modeling, business logic, and user interfaces.'
     },
     {
-      name: 'Campamento "Patrones Hermosos"',
+      name: '“Patrones Hermosos” Camp',
       issuer: 'Tecnológico de Monterrey',
-      detail: 'Campamento de ingeniería y programación para mujeres, enfocado en resolución de problemas, trabajo colaborativo y liderazgo STEM.'
+      detail: 'Academic camp in engineering and programming for women, focused on problem-solving, teamwork, and STEM leadership.'
     }
   ];
 
   languages = [
-    { name: 'Inglés', level: 'Intermedio · B2', note: 'Universidad Autónoma de Aguascalientes' }
+    { name: 'English', level: 'Intermediate · B2', note: 'Universidad Autónoma de Aguascalientes' }
   ];
 }
