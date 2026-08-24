@@ -1,3 +1,6 @@
+.education {
+  background: var(--bg-soft);
+}
 .education__grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -7,7 +10,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-}
+} 
 
 .col-title {
   font-family: var(--font-mono);

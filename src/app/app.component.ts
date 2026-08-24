@@ -6,6 +6,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationComponent } from './components/education/education.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SkillsComponent,
     ProjectsComponent,
     EducationComponent,
-    FooterComponent
+    FooterComponent,
+    SoftSkillsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
