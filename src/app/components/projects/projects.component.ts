@@ -19,7 +19,7 @@ interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      name: 'Plataforma E-commerce Blossom',
+      name: 'Blossom E-commerce Platform',
       period: 'Feb – May 2026',
       stack: ['Angular', 'Node.js', 'Express', 'MySQL'],
       bullets: [
@@ -33,8 +33,8 @@ export class ProjectsComponent {
       repo: 'https://github.com/vabersal05/Pagina-Blossom.git'
     },
     {
-      name: 'Creador de CV Online',
-      period: 'May – Jun 2026',
+      name: 'Online CV Creator',
+      period: 'May – June 2026',
       stack: ['React', 'Node.js', 'Express'],
       bullets: [
         'Platform for creating professional resumes.',
@@ -47,8 +47,8 @@ export class ProjectsComponent {
       repo: 'https://github.com/FerHer18/DevProfile-Generador-Din-mico-de-CV-en-PDF.git'
     },
     {
-      name: 'Procesamiento Distribuido',
-      period: 'May – Jun 2026',
+      name: 'Distributed Data Processing',
+      period: 'May – June 2026',
       stack: ['Apache Kafka', 'Apache Spark', 'Node.js', 'JavaScript'],
       bullets: [
         'Distributed architecture for processing over 100,000 records.',
@@ -58,8 +58,8 @@ export class ProjectsComponent {
       ]
     },
     {
-      name: 'Plataforma Web "Sexta Armonía"',
-      period: 'Nov – Dic 2025',
+      name: '"Sexta Armonía" Web Platform',
+      period: 'November – December 2025',
       stack: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
       bullets: [
         'Platform for an online coffee shop.',
