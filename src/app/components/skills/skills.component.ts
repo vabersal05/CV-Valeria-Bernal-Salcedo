@@ -14,7 +14,7 @@ interface SkillGroup {
 })
 export class SkillsComponent {
   groups: SkillGroup[] = [
-    { title: 'Languages', items: ['Java', 'JavaScript', 'TypeScript', 'C#', 'C++', 'SQL', 'HTML', 'CSS'] },
+    { title: 'Languages', items: ['Java', 'JavaScript', 'C#', 'C++', 'SQL', 'HTML', 'CSS'] },
     { title: 'Frameworks & Libraries', items: ['Angular', 'React', 'Node.js', 'Express'] },
     { title: 'Databases', items: ['MySQL'] },
     { title: 'Tools', items: ['Git', 'GitHub', 'Docker', 'Trello', 'Jira', 'VS Code', 'Visual Studio', 'Postman', 'XAMPP'] },
